@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+
+    <link rel="stylesheet" href="css/question4Style.css">
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: black;">
+<main>
+        <div class="mainDiv">
+
+            <!-- Div For Score -->
+            <!-- Score that will be changed based on selected answers -->
+            <center>
+                <div class="scoreDiv">
+                    <div class="scoreBoard">
+                        <h1 style="color: bisque;">Score<span><h1 id="Score"></h1></span></h1>
+                    </div>
+                    <div id="correctAnswer" style="display: none;">
+                        <h2>Hurray!!! Correct Answer ✓</h2>
+                    </div>
+                    <div id="incorrectAnswer" style="display: none;">
+                        <h2>Oops!!! Wrong Answer ✘</h2>
+                    </div>
+                </div>
+            </center>
+            <br>
+
+            <!-- Progess Bar Div -->
+            <!-- For each question progess bar will change its value -->
+            <div class="progessBarDiv">
+                <h2>Question</h2>
+                <div class="progess-bar">
+                    <div class="question4ProgressBar"><span>4/5</span></div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Question Div -->
+            <center>
+                <div class="questionDiv">
+                    <h2>How many planets are there in the solar system as of 2022? </h2>
+                </div>
+            </center>
+            <br>
+            <div class="clear"></div>
+            <center>
+                <div class="app-paper">
+                    <form action="">
+                        <input type="text" id="question4Answer" placeholder="Enter your answer here" >
+                    </form>
+                </div>
+            </center>
+
+            <!-- Button to go to next Question -->
+            <center>
+                <div class="buttonsDiv">
+                    <input class="btn btn-success" id="gotoQuestion5" type="button" value="Next Question ➜" onclick="CheckAnswerForQuestion4();"/>
+                </div>
+            </center>
+        </div>
+
+</main>
+</body>
+</html>
+
+<script type="text/javascript" src="javaScript/question4javaScript.js"></script>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+
+    <link rel="stylesheet" href="css/question5Style.css">
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: black;">
+<main>
+        <div class="mainDiv">
+
+            <!-- Div For Score -->
+            <!-- Score that will be changed based on selected answers -->
+            <center>
+                <div class="scoreDiv">
+                    <div class="scoreBoard">
+                        <h1 style="color: bisque;">Score<span><h1 id="Score"></h1></span></h1>
+                    </div>
+                    <div id="correctAnswer" style="display: none;">
+                        <h2>Hurray!!! Correct Answer ✓</h2>
+                    </div>
+                    <div id="incorrectAnswer" style="display: none;">
+                        <h2>Oops!!! Wrong Answer ✘</h2>
+                    </div>
+                </div>
+            </center>
+            <br>
+
+            <!-- Progess Bar Div -->
+            <!-- For each question progess bar will change its value -->
+            <div class="progessBarDiv">
+                <h2>Question No.</h2>
+                <div class="progess-bar">
+                    <div class="question5ProgressBar"><span>5/5</span></div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Question Div -->
+            <center>
+                <div class="questionDiv">
+                    <h2>What sports car company manufactures the 911?</h2>
+                </div>
+            </center>
+            <br>
+            <div class="clear"></div>
+
+            <!-- Div Options to select from -->
+            <!-- Select the appropiate option based on the question -->
+            <center>
+                <div class="app-paper">
+                    <form action="">
+
+                        <!-- Option 1 -->
+                        <input type="radio" name="carCompany" id="question5option1" class="hidebox" value="Porsche">
+                        <label for="question5option1" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Porsche</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 2 -->
+                        <input type="radio" name="carCompany" id="question5option2" class="hidebox" value="Mercedes">
+                        <label for="question5option2" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Mercedes</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 3 -->
+                        <input type="radio" name="carCompany" id="question5option3" class="hidebox" value="Range Rover">
+                        <label for="question5option3" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Range Rover</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 4 -->
+                        <input type="radio" name="carCompany" id="question5option4" class="hidebox" value="Volvo">
+                        <label for="question5option4" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Volvo</div> 
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </center>
+
+            <!-- Button to go to next Question -->
+            <center>
+                <div class="buttonsDiv">
+                    <input class="btn btn-success" id="finishQuiz" type="button" value="Complete Quiz" onclick="CheckAnswerForQuestion5();"/>
+                </div>
+            </center>
+        </div>
+
+</main>
+</body>
+</html>
+
+<script type="text/javascript" src="javaScript/question5javaScript.js"></script>

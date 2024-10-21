@@ -1,0 +1,197 @@
+.mainDiv
+{
+    margin-left: 25%;
+    width: 50%;
+    height: 820px;
+    background-color: black;
+}
+
+.mainDiv
+{
+    font-family: sans-serif;
+}
+
+/* ------------------Score Board Style----------------- */
+.scoreDiv
+{
+    margin-top: 30px;
+    height: 100px;
+}
+
+#Score{
+    color: bisque;
+}
+.scoreBoard{
+    width: 200px;
+    height: 110px;
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+}
+
+#correctAnswer{
+    margin-top: 5px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+
+#incorrectAnswer{
+    margin-top: 5px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+
+/* ------------------------------------------------- */
+
+/* -------Style for Progress Bar---------- */
+.progessBarDiv
+{
+    margin-top: 50px;
+}
+.progessBarDiv h2
+{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: #cddc39;
+    font-size: 16px;
+}
+
+.progess-bar
+{
+    background: #959595;
+    width: 710px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progess-bar div
+{ 
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progess-bar div span
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: black;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question3ProgressBar
+{
+    background: #cddc39;
+    animation: question3ProgressBar 1s linear forwards;
+}
+.question3ProgressBar span{
+    border: 1px solid #cddc39;
+}
+@keyframes question3ProgressBar
+{
+    100%{
+        width: 60%;
+    }
+}
+/* ---------------------------------------- */
+
+/* ------------Style for Question and Options------------- */
+.questionDiv h2{
+    margin-top: 50px;
+    color: lightcyan;
+}
+
+.optionsDiv
+{
+    width: 90%;
+    height: 150px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.app-paper{ 
+    max-width: 90%;
+    width: 100%;
+    /* background: #fff; */
+    border-radius: 5px; 
+    box-shadow: Opx 5px 12px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.app-paper:before{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+}
+
+.hidebox
+{
+    display: none;
+}
+
+.app-paper form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.lbl-radio{
+    text-align: center;
+    box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border-radius: 15px;
+}
+
+.display-box .capital{
+     font-weight: 600;
+     margin-bottom: 5px;
+     letter-spacing: 0.5px;
+     color: lightcoral;
+}
+
+input[type=radio]:checked + .lbl-radio{
+    border-color: lightcoral;
+    border-width: 5px;
+    border-style:inset;}
+
+.lbl-radio:hover {
+    background: #DDD;
+}
+/* --------------------------------------------- */
+
+
+/* ------------Style for Next Button------------- */
+.buttonsDiv
+{
+    margin-top: 50px;
+}
+#gotoQuestion4
+{
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 300px;
+    height: 75px;
+}
+/* --------------------------------------- */

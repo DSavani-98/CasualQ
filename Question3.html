@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+
+    <link rel="stylesheet" href="css/question3Style.css">
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: black;">
+<main>
+        <div class="mainDiv">
+
+            <!-- Div For Score -->
+            <!-- Score that will be changed based on selected answers -->
+            <center>
+                <div class="scoreDiv">
+                    <div class="scoreBoard">
+                        <h1 style="color: bisque;">Score<span><h1 id="Score"></h1></span></h1>
+                    </div>
+                    <div id="correctAnswer" style="display: none;">
+                        <h2>Hurray!!! Correct Answer ✓</h2>
+                    </div>
+                    <div id="incorrectAnswer" style="display: none;">
+                        <h2>Oops!!! Wrong Answer ✘</h2>
+                    </div>
+                </div>
+            </center>
+            <br>
+
+            <!-- Progess Bar Div -->
+            <!-- For each question progess bar will change its value -->
+            <div class="progessBarDiv">
+                <h2>Question No.</h2>
+                <div class="progess-bar">
+                    <div class="question3ProgressBar"><span>3/5</span></div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Question Div -->
+            <center>
+                <div class="questionDiv">
+                    <h2>What is the highest-rated film on IMDb as of November 18th, 2022?</h2>
+                </div>
+            </center>
+            <br>
+            <div class="clear"></div>
+
+            <!-- Div Options to select from -->
+            <!-- Select the appropiate option based on the question -->
+            <center>
+                <div class="app-paper">
+                    <form action="">
+
+                        <!-- Option 1 -->
+                        <input type="radio" name="topRatedMovie" id="question3option1" class="hidebox" value=" The Dark Knight">
+                        <label for="question3option1" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital"> The Dark Knight</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 2 -->
+                        <input type="radio" name="topRatedMovie" id="question3option2" class="hidebox" value="The Shawshank Redemption">
+                        <label for="question3option2" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">The Shawshank Redemption</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 3 -->
+                        <input type="radio" name="topRatedMovie" id="question3option3" class="hidebox" value="Avengers Endgame">
+                        <label for="question3option3" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Avengers Endgame</div> 
+                            </div>
+                        </label>
+    
+                        <!-- Option 4 -->
+                        <input type="radio" name="topRatedMovie" id="question3option4" class="hidebox" value="Avatar">
+                        <label for="question3option4" class="lbl-radio"> 
+                            <div class="display-box">
+                                 <div class="capital">Avatar</div> 
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </center>
+
+            <!-- Button to go to next Question -->
+            <center>
+                <div class="buttonsDiv">
+                    <input class="btn btn-success" id="gotoQuestion4" type="button" value="Next Question ➜" onclick="CheckAnswerForQuestion3();"/>
+                </div>
+            </center>
+        </div>
+
+</main>
+</body>
+</html>
+
+<script type="text/javascript" src="javaScript/question3javaScript.js"></script>

@@ -1,0 +1,174 @@
+.mainDiv
+{
+    margin-left: 25%;
+    width: 50%;
+    height: 800px;
+    background-color: black;
+}
+
+.mainDiv
+{
+    font-family: sans-serif;
+}
+
+/* ------------------Score Board Style----------------- */
+.scoreDiv
+{
+    margin-top: 30px;
+    height: 100px;
+}
+
+#Score{
+    color: bisque;
+}
+.scoreBoard{
+    width: 200px;
+    height: 110px;
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+}
+
+#correctAnswer{
+    margin-top: 5px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+
+#incorrectAnswer{
+    margin-top: 5px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+
+/* ------------------------------------------------- */
+
+
+/* -------Style for Progress Bar---------- */
+.progessBarDiv
+{
+    margin-top: 90px;
+}
+.progessBarDiv h2
+{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: #cddc39;
+    font-size: 16px;
+}
+
+.progess-bar
+{
+    background: #959595;
+    width: 710px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progess-bar div
+{ 
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progess-bar div span
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: black;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question4ProgressBar
+{
+    background: #cddc39;
+    animation: question4ProgressBar 1s linear forwards;
+}
+.question4ProgressBar span{
+    border: 1px solid #cddc39;
+}
+@keyframes question4ProgressBar
+{
+    100%{
+        width: 80%;
+    }
+}
+/* ---------------------------------------- */
+
+.questionDiv h2{
+    margin-top: 75px;
+    color: lightcyan;
+}
+
+.optionsDiv
+{
+    width: 90%;
+    height: 150px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+
+.app-paper{ 
+    max-width: 90%;
+    width: 100%;
+    /* background: #fff; */
+    border-radius: 5px; 
+    box-shadow: Opx 5px 12px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.app-paper:before{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+}
+/* --------------------------------------------------- */
+
+
+/* ------------------TextBox Style -------------------- */
+#question4Answer{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+/* ----------------------------------------------------- */
+
+
+
+
+/* ------------Style for Next Question Button------------- */
+.buttonsDiv
+{
+    margin-top: 50px;
+}
+#gotoQuestion5
+{
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 300px;
+    height: 75px;
+}
+/* --------------------------------------- */

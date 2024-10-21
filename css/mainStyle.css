@@ -1,0 +1,45 @@
+.mainDiv
+{
+    margin-left: 10%;
+    margin-top: 125px;
+    width: 80%;
+    height: 600px;
+    font-family: sans-serif;
+}
+
+.leftsideDiv
+{
+    padding-top: 15%;
+    width: 50%;
+    float: left;
+}
+
+.rightsideDiv
+{
+    width: 50%;
+    float: right;
+}
+
+.imageDiv img
+{
+    border: 8px solid lightskyblue;
+    border-radius: 30px;
+    margin-top: 15%;
+
+}
+
+#startQuizBtn
+{
+    border-radius: 15px;
+    width: 300px;
+    height: 75px;
+}
+
+#scoreBoard{
+    margin-top: 30%;
+    padding-top: 80px;
+    width: 400px;
+    height: 300px;
+    border: 10px solid brown;
+    border-radius: 20px;
+}
